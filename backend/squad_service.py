@@ -1,7 +1,7 @@
 import requests
 import os
 
-SQUAD_SECRET_KEY = ""
+SQUAD_SECRET_KEY = "sandbox_sk_9d8e846d8cc8be31e8ba484e5d4d30a4ddbf8e013d1b"
 URL_BASE = "https://sandbox-api-d.squadco.com"
 
 def initiate_escrow(amount, shipment_id):
