@@ -1,5 +1,6 @@
 from database import Base
 from sqlalchemy import Integer, Float, DateTime, String, Column
+import datetime
 
 class Shipment(Base):
     __tablename__ = "shipments"
@@ -10,3 +11,4 @@ class Shipment(Base):
     supplier_acc_num = Column(String)
     status = Column(String, default="PENDING_PAYMENT")
     ai_score = Column(Float, default=0.0)
+    created_at = Column(DateTime, default=datetime.datetime.utcnow)
